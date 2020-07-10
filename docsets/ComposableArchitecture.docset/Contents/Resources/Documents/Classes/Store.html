@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Store Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/Store" class="dashAnchor"></a>
+
+    <a title="Store Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ComposableArchitecture Docs
+        </a>
+         (78% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ComposableArchitecture Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Store Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Store.html">Store</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestStore.html">TestStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestStore/Step.html">– Step</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ViewStore.html">ViewStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ActionFormat.html">ActionFormat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CLAuthorizationStatus.html">CLAuthorizationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/OperationQueue.html">OperationQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publishers.html">Publishers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publishers.html#/Create">– Create</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/RunLoop.html">RunLoop</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SFSpeechRecognizerAuthorizationStatus.html">SFSpeechRecognizerAuthorizationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/View.html">View</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CustomDebugOutputConvertible.html">CustomDebugOutputConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AlertState.html">AlertState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AlertState/Button.html">– Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DebugEnvironment.html">DebugEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Effect.html">Effect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Effect/Subscriber.html">– Subscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ForEachStore.html">ForEachStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Identified.html">Identified</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/IdentifiedArray.html">IdentifiedArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/IfLetStore.html">IfLetStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorePublisher.html">StorePublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WithViewStore.html">WithViewStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:22ComposableArchitecture17IdentifiedArrayOfa">IdentifiedArrayOf</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Store</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Store</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Action</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A store represents the runtime that powers the application. It is the object that you will pass
+around to views that need to interact with the application.</p>
+
+<p>You will typically construct a single one of these at the root of your application, and then use
+the <code>scope</code> method to derive more focused stores that can be passed to subviews.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC12initialState7reducer11environmentACyxq_Gx_AA7ReducerVyxq_qd__Gqd__tclufc"></a>
+                    <a name="//apple_ref/swift/Method/init(initialState:reducer:environment:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC12initialState7reducer11environmentACyxq_Gx_AA7ReducerVyxq_qd__Gqd__tclufc">init(initialState:<wbr>reducer:<wbr>environment:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a store from an initial state, a reducer, and an environment.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">Environment</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="nv">initialState</span><span class="p">:</span> <span class="kt">State</span><span class="p">,</span>
+  <span class="nv">reducer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Reducer.html">Reducer</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Action</span><span class="p">,</span> <span class="kt">Environment</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="nv">environment</span><span class="p">:</span> <span class="kt">Environment</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initialState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The state to start the application in.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reducer that powers the business logic of the application.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>environment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The environment of dependencies for the application.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC5scope5state6actionACyqd__qd_0_Gqd__xc_q_qd_0_ctr0_lF"></a>
+                    <a name="//apple_ref/swift/Method/scope(state:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC5scope5state6actionACyqd__qd_0_Gqd__xc_q_qd_0_ctr0_lF">scope(state:<wbr>action:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scopes the store to one that exposes local state and actions.</p>
+
+<p>This can be useful for deriving new stores to hand to child views in an application. For
+example:</p>
+<pre class="highlight swift"><code><span class="c1">// Application state made from local states.</span>
+<span class="kd">struct</span> <span class="kt">AppState</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">login</span><span class="p">:</span> <span class="kt">LoginState</span><span class="p">,</span> <span class="o">...</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppAction</span> <span class="p">{</span> <span class="k">case</span> <span class="nf">login</span><span class="p">(</span><span class="kt">LoginAction</span><span class="p">),</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c1">// A store that runs the entire application.</span>
+<span class="k">let</span> <span class="nv">store</span> <span class="o">=</span> <span class="kt">Store</span><span class="p">(</span><span class="nv">initialState</span><span class="p">:</span> <span class="kt">AppState</span><span class="p">(),</span> <span class="nv">reducer</span><span class="p">:</span> <span class="n">appReducer</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="p">())</span>
+
+<span class="c1">// Construct a login view by scoping the store to one that works with only login domain.</span>
+<span class="k">let</span> <span class="nv">loginView</span> <span class="o">=</span> <span class="kt">LoginView</span><span class="p">(</span>
+  <span class="nv">store</span><span class="p">:</span> <span class="n">store</span><span class="o">.</span><span class="nf">scope</span><span class="p">(</span>
+    <span class="nv">state</span><span class="p">:</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">login</span> <span class="p">},</span>
+    <span class="nv">action</span><span class="p">:</span> <span class="p">{</span> <span class="kt">AppAction</span><span class="o">.</span><span class="nf">login</span><span class="p">(</span><span class="nv">$0</span><span class="p">)</span> <span class="p">}</span>
+  <span class="p">)</span>
+<span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">scope</span><span class="o">&lt;</span><span class="kt">LocalState</span><span class="p">,</span> <span class="kt">LocalAction</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">State</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">LocalState</span><span class="p">,</span>
+  <span class="n">action</span> <span class="nv">fromLocalAction</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">LocalAction</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Action</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Store</span><span class="o">&lt;</span><span class="kt">LocalState</span><span class="p">,</span> <span class="kt">LocalAction</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms <code>State</code> into <code>LocalState</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromLocalAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms <code>LocalAction</code> into <code>Action</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new store with its domain (state and action) transformed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC5scope5stateACyqd__q_Gqd__xc_tlF"></a>
+                    <a name="//apple_ref/swift/Method/scope(state:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC5scope5stateACyqd__q_Gqd__xc_tlF">scope(state:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scopes the store to one that exposes local state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">scope</span><span class="o">&lt;</span><span class="kt">LocalState</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">State</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">LocalState</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Store</span><span class="o">&lt;</span><span class="kt">LocalState</span><span class="p">,</span> <span class="kt">Action</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms <code>State</code> into <code>LocalState</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new store with its domain (state and action) transformed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC5scope5state6action7Combine12AnyPublisherVyACyqd_0_qd_1_Gs5NeverOGqd__AIyxALGc_q_qd_1_ctAG0I0Rd__6OutputQyd__Rsd_0_AL7FailureRtd__r1_lF"></a>
+                    <a name="//apple_ref/swift/Method/scope(state:action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC5scope5state6action7Combine12AnyPublisherVyACyqd_0_qd_1_Gs5NeverOGqd__AIyxALGc_q_qd_1_ctAG0I0Rd__6OutputQyd__Rsd_0_AL7FailureRtd__r1_lF">scope(state:<wbr>action:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scopes the store to a publisher of stores of more local state and local actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">scope</span><span class="o">&lt;</span><span class="kt">P</span><span class="p">:</span> <span class="kt">Publisher</span><span class="p">,</span> <span class="kt">LocalState</span><span class="p">,</span> <span class="kt">LocalAction</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">P</span><span class="p">,</span>
+  <span class="n">action</span> <span class="nv">fromLocalAction</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">LocalAction</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Action</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">Store</span><span class="o">&lt;</span><span class="kt">LocalState</span><span class="p">,</span> <span class="kt">LocalAction</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span>
+<span class="k">where</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Output</span> <span class="o">==</span> <span class="kt">LocalState</span><span class="p">,</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Failure</span> <span class="o">==</span> <span class="kt">Never</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms a publisher of <code>State</code> into a publisher of
+<code>LocalState</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromLocalAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms <code>LocalAction</code> into <code>Action</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A publisher of stores with its domain (state and action) transformed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC5scope5state7Combine12AnyPublisherVyACyqd_0_q_Gs5NeverOGqd__AHyxAKGc_tAF0H0Rd__6OutputQyd__Rsd_0_AK7FailureRtd__r0_lF"></a>
+                    <a name="//apple_ref/swift/Method/scope(state:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC5scope5state7Combine12AnyPublisherVyACyqd_0_q_Gs5NeverOGqd__AHyxAKGc_tAF0H0Rd__6OutputQyd__Rsd_0_AK7FailureRtd__r0_lF">scope(state:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scopes the store to a publisher of stores of more local state and local actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">scope</span><span class="o">&lt;</span><span class="kt">P</span><span class="p">:</span> <span class="kt">Publisher</span><span class="p">,</span> <span class="kt">LocalState</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">P</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">Store</span><span class="o">&lt;</span><span class="kt">LocalState</span><span class="p">,</span> <span class="kt">Action</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span>
+<span class="k">where</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Output</span> <span class="o">==</span> <span class="kt">LocalState</span><span class="p">,</span> <span class="kt">P</span><span class="o">.</span><span class="kt">Failure</span> <span class="o">==</span> <span class="kt">Never</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms a publisher of <code>State</code> into a publisher
+of <code>LocalState</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A publisher of stores with its domain (state and action)
+transformed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC9statelessACyytq_Gvp"></a>
+                    <a name="//apple_ref/swift/Property/stateless" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC9statelessACyytq_Gvp">stateless</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a &ldquo;stateless&rdquo; store by erasing state to <code>Void</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">stateless</span><span class="p">:</span> <span class="kt">Store</span><span class="o">&lt;</span><span class="kt">Void</span><span class="p">,</span> <span class="kt">Action</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC10actionlessACyxs5NeverOGvp"></a>
+                    <a name="//apple_ref/swift/Property/actionless" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC10actionlessACyxs5NeverOGvp">actionless</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an &ldquo;actionless&rdquo; store by erasing action to <code>Never</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">actionless</span><span class="p">:</span> <span class="kt">Store</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC5ifLet4then4else7Combine11Cancellable_pyACyqd__q_Gc_yyctqd__SgRszlF"></a>
+                    <a name="//apple_ref/swift/Method/ifLet(then:else:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC5ifLet4then4else7Combine11Cancellable_pyACyqd__q_Gc_yyctqd__SgRszlF">ifLet(then:<wbr>else:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscribes to updates when a store containing optional state goes from <code>nil</code> to non-<code>nil</code> or
+non-<code>nil</code> to <code>nil</code>.</p>
+
+<p>This is useful for handling navigation in UIKit. The state for a screen that you want to
+navigate to can be held as an optional value in the parent, and when that value switches
+from <code>nil</code> to non-<code>nil</code> you want to trigger a navigation and hand the detail view a <code>Store</code>
+whose domain has been scoped to just that feature:</p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MasterViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">store</span><span class="p">:</span> <span class="kt">Store</span><span class="o">&lt;</span><span class="kt">MasterState</span><span class="p">,</span> <span class="kt">MasterAction</span><span class="o">&gt;</span>
+  <span class="k">var</span> <span class="nv">cancellables</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyCancellable</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="o">...</span>
+  <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+    <span class="o">...</span>
+    <span class="k">self</span><span class="o">.</span><span class="n">store</span>
+      <span class="o">.</span><span class="nf">scope</span><span class="p">(</span><span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">optionalDetail</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">MasterAction</span><span class="o">.</span><span class="n">detail</span><span class="p">)</span>
+      <span class="o">.</span><span class="nf">ifLet</span><span class="p">(</span>
+        <span class="nv">then</span><span class="p">:</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="n">detailStore</span> <span class="k">in</span>
+          <span class="k">self</span><span class="p">?</span><span class="o">.</span><span class="n">navigationController</span><span class="p">?</span><span class="o">.</span><span class="nf">pushViewController</span><span class="p">(</span>
+            <span class="kt">DetailViewController</span><span class="p">(</span><span class="nv">store</span><span class="p">:</span> <span class="n">detailStore</span><span class="p">),</span>
+            <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span>
+          <span class="p">)</span>
+        <span class="p">},</span>
+        <span class="nv">else</span><span class="p">:</span> <span class="p">{</span> <span class="p">[</span><span class="k">weak</span> <span class="k">self</span><span class="p">]</span> <span class="k">in</span>
+          <span class="k">guard</span> <span class="k">let</span> <span class="nv">self</span> <span class="o">=</span> <span class="k">self</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+          <span class="k">self</span><span class="o">.</span><span class="n">navigationController</span><span class="p">?</span><span class="o">.</span><span class="nf">popToViewController</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+        <span class="p">}</span>
+      <span class="p">)</span>
+      <span class="o">.</span><span class="nf">store</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="o">&amp;</span><span class="k">self</span><span class="o">.</span><span class="n">cancellables</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">ifLet</span><span class="o">&lt;</span><span class="kt">Wrapped</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">then</span> <span class="nv">unwrap</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Store</span><span class="o">&lt;</span><span class="kt">Wrapped</span><span class="p">,</span> <span class="kt">Action</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+  <span class="nv">else</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Cancellable</span> <span class="k">where</span> <span class="kt">State</span> <span class="o">==</span> <span class="kt">Wrapped</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unwrap</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that is called with a store of non-optional state whenever the store&rsquo;s
+optional state goes from <code>nil</code> to non-<code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>else</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that is called whenever the store&rsquo;s optional state goes from non-<code>nil</code> to
+<code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A cancellable associated with the underlying subscription.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture5StoreC5ifLet4then7Combine11Cancellable_pyACyqd__q_Gc_tqd__SgRszlF"></a>
+                    <a name="//apple_ref/swift/Method/ifLet(then:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture5StoreC5ifLet4then7Combine11Cancellable_pyACyqd__q_Gc_tqd__SgRszlF">ifLet(then:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An overload of <code><a href="../Classes/Store.html#/s:22ComposableArchitecture5StoreC5ifLet4then4else7Combine11Cancellable_pyACyqd__q_Gc_yyctqd__SgRszlF">ifLet(then:else:)</a></code> for the times that you do not want to handle the <code>else</code>
+case.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">ifLet</span><span class="o">&lt;</span><span class="kt">Wrapped</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">then</span> <span class="nv">unwrap</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Store</span><span class="o">&lt;</span><span class="kt">Wrapped</span><span class="p">,</span> <span class="kt">Action</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Cancellable</span> <span class="k">where</span> <span class="kt">State</span> <span class="o">==</span> <span class="kt">Wrapped</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unwrap</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that is called with a store of non-optional state whenever the
+store&rsquo;s optional state goes from <code>nil</code> to non-<code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A cancellable associated with the underlying subscription.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-07-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

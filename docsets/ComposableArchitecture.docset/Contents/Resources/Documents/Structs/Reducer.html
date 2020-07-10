@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reducer Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/Reducer" class="dashAnchor"></a>
+
+    <a title="Reducer Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ComposableArchitecture Docs
+        </a>
+         (78% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ComposableArchitecture Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Reducer Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Store.html">Store</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestStore.html">TestStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestStore/Step.html">– Step</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ViewStore.html">ViewStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ActionFormat.html">ActionFormat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CLAuthorizationStatus.html">CLAuthorizationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/OperationQueue.html">OperationQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publishers.html">Publishers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publishers.html#/Create">– Create</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/RunLoop.html">RunLoop</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SFSpeechRecognizerAuthorizationStatus.html">SFSpeechRecognizerAuthorizationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/View.html">View</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CustomDebugOutputConvertible.html">CustomDebugOutputConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AlertState.html">AlertState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AlertState/Button.html">– Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DebugEnvironment.html">DebugEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Effect.html">Effect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Effect/Subscriber.html">– Subscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ForEachStore.html">ForEachStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Identified.html">Identified</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/IdentifiedArray.html">IdentifiedArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/IfLetStore.html">IfLetStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorePublisher.html">StorePublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WithViewStore.html">WithViewStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:22ComposableArchitecture17IdentifiedArrayOfa">IdentifiedArrayOf</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Reducer</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Action</span><span class="p">,</span> <span class="kt">Environment</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A reducer describes how to evolve the current state of an application to the next state, given
+an action, and describes what <code><a href="../Structs/Effect.html">Effect</a></code>s should be executed later by the store, if any.</p>
+
+<p>Reducers have 3 generics:</p>
+
+<ul>
+<li><code>State</code>: A type that holds the current state of the application</li>
+<li><code>Action</code>: A type that holds all possible actions that cause the state of the application to
+change.</li>
+<li><p><code>Environment</code>: A type that holds all dependencies needed in order to produce <code><a href="../Structs/Effect.html">Effect</a></code>s, such
+as API clients, analytics clients, random number generators, etc.</p></li>
+</ul><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>The thread on which effects output is important. An effect&rsquo;s output is immediately sent
+back into the store, and <code><a href="../Classes/Store.html">Store</a></code> is not thread safe. This means all effects must receive
+values on the same thread, <strong>and</strong> if the <code><a href="../Classes/Store.html">Store</a></code> is being used to drive UI then all output
+must be on the main thread. You can use the <code>Publisher</code> method <code>receive(on:)</code> for make the
+effect output its values on the thread of your choice.</p>
+
+</div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerVyACyxq_q0_GAA6EffectVyq_s5NeverOGxz_q_q0_tccfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerVyACyxq_q0_GAA6EffectVyq_s5NeverOGxz_q_q0_tccfc">init(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a reducer from a simple reducer function signature.</p>
+
+<p>The reducer takes three arguments: state, action and environment. The state is <code>inout</code> so that
+you can make any changes to it directly inline. The reducer must return an effect, which
+typically would be constructed by using the dependencies inside the <code>environment</code> value. If
+no effect needs to be executed, a <code>.none</code> effect can be returned.</p>
+
+<p>For example:</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyState</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="s">""</span> <span class="p">}</span>
+<span class="kd">enum</span> <span class="kt">MyAction</span> <span class="p">{</span> <span class="k">case</span> <span class="n">buttonTapped</span><span class="p">,</span> <span class="nf">textChanged</span><span class="p">(</span><span class="kt">String</span><span class="p">)</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">MyEnvironment</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">analyticsClient</span><span class="p">:</span> <span class="kt">AnalyticsClient</span> <span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">myReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">MyState</span><span class="p">,</span> <span class="kt">MyAction</span><span class="p">,</span> <span class="kt">MyEnvironment</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">environment</span> <span class="k">in</span>
+  <span class="k">switch</span> <span class="n">action</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="o">.</span><span class="nv">buttonTapped</span><span class="p">:</span>
+    <span class="n">state</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">environment</span><span class="o">.</span><span class="n">analyticsClient</span><span class="o">.</span><span class="nf">track</span><span class="p">(</span><span class="s">"Button Tapped"</span><span class="p">)</span>
+
+  <span class="k">case</span> <span class="o">.</span><span class="nf">textChanged</span><span class="p">(</span><span class="k">let</span> <span class="nv">text</span><span class="p">):</span>
+    <span class="n">state</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
+    <span class="k">return</span> <span class="o">.</span><span class="k">none</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">reducer</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="k">inout</span> <span class="kt">State</span><span class="p">,</span> <span class="kt">Action</span><span class="p">,</span> <span class="kt">Environment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Effect.html">Effect</a></span><span class="o">&lt;</span><span class="kt">Action</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function signature that takes state, action and
+environment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV5emptyACyxq_q0_GvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/empty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV5emptyACyxq_q0_GvpZ">empty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A reducer that performs no state mutations and returns no effects.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">empty</span><span class="p">:</span> <span class="kt">Reducer</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV7combineyACyxq_q0_GAEd_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/combine(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV7combineyACyxq_q0_GAEd_tFZ">combine(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines many reducers into a single one by running each one on state in order, and merging
+all of the effects.</p>
+
+<p>It is important to note that the order of combining reducers matter. Combining <code>reducerA</code> with 
+<code>reducerB</code> is not necessarily the same as combining <code>reducerB</code> with <code>reducerA</code>.</p>
+
+<p>This can become an issue when working with reducers that have overlapping domains. For
+example, if <code>reducerA</code> embeds the domain of <code>reducerB</code> and reacts to its actions or modifies
+its state, it can make a difference if <code>reducerA</code> chooses to modify <code>reducerB</code>&lsquo;s state
+<em>before</em> or <em>after</em> <code>reducerB</code> runs.</p>
+
+<p>This is perhaps most easily seen when working with <code><a href="../Structs/Reducer.html#/s:22ComposableArchitecture7ReducerV8optionalACyxSgq_q0_Gvp">optional</a></code> reducers, where the parent
+domain may listen to the child domain and <code>nil</code> out its state. If the parent reducer runs
+before the child reducer, then the child reducer will not be able to react to its own action.</p>
+
+<p>Similar can be said for a <code>forEach</code> reducer. If the parent domain modifies the child
+collection by moving, removing, or modifying an element before the <code>forEach</code> reducer runs, the
+<code>forEach</code> reducer may perform its action against the wrong element, an element that no longer
+exists, or an element in an unexpected state.</p>
+
+<p>Running a parent reducer before a child reducer can be considered an application logic
+error, and can produce assertion failures. So you should almost always combine reducers in
+order from child to parent domain.</p>
+
+<p>Here is an example of how you should combine an <code><a href="../Structs/Reducer.html#/s:22ComposableArchitecture7ReducerV8optionalACyxSgq_q0_Gvp">optional</a></code> reducer with a parent domain:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">parentReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">ParentState</span><span class="p">,</span> <span class="kt">ParentAction</span><span class="p">,</span> <span class="kt">ParentEnvironment</span><span class="o">&gt;.</span><span class="nf">combine</span><span class="p">(</span>
+  <span class="c1">// Combined before parent so that it can react to `.dismiss` while state is non-`nil`.</span>
+  <span class="n">childReducer</span><span class="o">.</span><span class="kd">optional</span><span class="o">.</span><span class="nf">pullback</span><span class="p">(</span>
+    <span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">child</span><span class="p">,</span>
+    <span class="nv">action</span><span class="p">:</span> <span class="o">/</span><span class="kt">ParentAction</span><span class="o">.</span><span class="n">child</span><span class="p">,</span>
+    <span class="nv">environment</span><span class="p">:</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">child</span> <span class="p">}</span>
+  <span class="p">),</span>
+  <span class="c1">// Combined after child so that it can `nil` out child state upon `.child(.dismiss)`.</span>
+  <span class="kt">Reducer</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">environment</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">action</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">child</span><span class="p">(</span><span class="o">.</span><span class="n">dismiss</span><span class="p">):</span>
+      <span class="n">state</span><span class="o">.</span><span class="n">child</span> <span class="o">=</span> <span class="kc">nil</span>
+      <span class="k">return</span> <span class="o">.</span><span class="k">none</span>
+    <span class="o">...</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+<span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">combine</span><span class="p">(</span><span class="n">_</span> <span class="nv">reducers</span><span class="p">:</span> <span class="kt">Reducer</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A list of reducers.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A single reducer.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV7combineyACyxq_q0_GSayAEGFZ"></a>
+                    <a name="//apple_ref/swift/Method/combine(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV7combineyACyxq_q0_GSayAEGFZ">combine(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines many reducers into a single one by running each one on state in order, and merging
+all of the effects.</p>
+
+<p>It is important to note that the order of combining reducers matter. Combining <code>reducerA</code> with
+<code>reducerB</code> is not necessarily the same as combining <code>reducerB</code> with <code>reducerA</code>.</p>
+
+<p>This can become an issue when working with reducers that have overlapping domains. For
+example, if <code>reducerA</code> embeds the domain of <code>reducerB</code> and reacts to its actions or modifies
+its state, it can make a difference if <code>reducerA</code> chooses to modify <code>reducerB</code>&lsquo;s state
+<em>before</em> or <em>after</em> <code>reducerB</code> runs.</p>
+
+<p>This is perhaps most easily seen when working with <code><a href="../Structs/Reducer.html#/s:22ComposableArchitecture7ReducerV8optionalACyxSgq_q0_Gvp">optional</a></code> reducers, where the parent
+domain may listen to the child domain and <code>nil</code> out its state. If the parent reducer runs
+before the child reducer, then the child reducer will not be able to react to its own action.</p>
+
+<p>Similar can be said for a <code>forEach</code> reducer. If the parent domain modifies the child
+collection by moving, removing, or modifying an element before the <code>forEach</code> reducer runs, the
+<code>forEach</code> reducer may perform its action against the wrong element, an element that no longer
+exists, or an element in an unexpected state.</p>
+
+<p>Running a parent reducer before a child reducer can be considered an application logic
+error, and can produce assertion failures. So you should almost always combine reducers in
+order from child to parent domain.</p>
+
+<p>Here is an example of how you should combine an <code><a href="../Structs/Reducer.html#/s:22ComposableArchitecture7ReducerV8optionalACyxSgq_q0_Gvp">optional</a></code> reducer with a parent domain:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">parentReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">ParentState</span><span class="p">,</span> <span class="kt">ParentAction</span><span class="p">,</span> <span class="kt">ParentEnvironment</span><span class="o">&gt;.</span><span class="nf">combine</span><span class="p">(</span>
+  <span class="c1">// Combined before parent so that it can react to `.dismiss` while state is non-`nil`.</span>
+  <span class="n">childReducer</span><span class="o">.</span><span class="kd">optional</span><span class="o">.</span><span class="nf">pullback</span><span class="p">(</span>
+    <span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">child</span><span class="p">,</span>
+    <span class="nv">action</span><span class="p">:</span> <span class="o">/</span><span class="kt">ParentAction</span><span class="o">.</span><span class="n">child</span><span class="p">,</span>
+    <span class="nv">environment</span><span class="p">:</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">child</span> <span class="p">}</span>
+  <span class="p">),</span>
+  <span class="c1">// Combined after child so that it can `nil` out child state upon `.child(.dismiss)`.</span>
+  <span class="kt">Reducer</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">environment</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">action</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">child</span><span class="p">(</span><span class="o">.</span><span class="n">dismiss</span><span class="p">):</span>
+      <span class="n">state</span><span class="o">.</span><span class="n">child</span> <span class="o">=</span> <span class="kc">nil</span>
+      <span class="k">return</span> <span class="o">.</span><span class="k">none</span>
+    <span class="o">...</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+<span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">combine</span><span class="p">(</span><span class="n">_</span> <span class="nv">reducers</span><span class="p">:</span> <span class="p">[</span><span class="kt">Reducer</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of reducers.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A single reducer.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV8combined4withACyxq_q0_GAF_tF"></a>
+                    <a name="//apple_ref/swift/Method/combined(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV8combined4withACyxq_q0_GAF_tF">combined(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines many reducers into a single one by running each one on state in order, and merging
+all of the effects.</p>
+
+<p>It is important to note that the order of combining reducers matter. Combining <code>reducerA</code> with
+<code>reducerB</code> is not necessarily the same as combining <code>reducerB</code> with <code>reducerA</code>.</p>
+
+<p>This can become an issue when working with reducers that have overlapping domains. For
+example, if <code>reducerA</code> embeds the domain of <code>reducerB</code> and reacts to its actions or modifies
+its state, it can make a difference if <code>reducerA</code> chooses to modify <code>reducerB</code>&lsquo;s state
+<em>before</em> or <em>after</em> <code>reducerB</code> runs.</p>
+
+<p>This is perhaps most easily seen when working with <code><a href="../Structs/Reducer.html#/s:22ComposableArchitecture7ReducerV8optionalACyxSgq_q0_Gvp">optional</a></code> reducers, where the parent
+domain may listen to the child domain and <code>nil</code> out its state. If the parent reducer runs
+before the child reducer, then the child reducer will not be able to react to its own action.</p>
+
+<p>Similar can be said for a <code>forEach</code> reducer. If the parent domain modifies the child
+collection by moving, removing, or modifying an element before the <code>forEach</code> reducer runs, the
+<code>forEach</code> reducer may perform its action against the wrong element, an element that no longer
+exists, or an element in an unexpected state.</p>
+
+<p>Running a parent reducer before a child reducer can be considered an application logic
+error, and can produce assertion failures. So you should almost always combine reducers in
+order from child to parent domain.</p>
+
+<p>Here is an example of how you should combine an <code><a href="../Structs/Reducer.html#/s:22ComposableArchitecture7ReducerV8optionalACyxSgq_q0_Gvp">optional</a></code> reducer with a parent domain:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">parentReducer</span><span class="p">:</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">ParentState</span><span class="p">,</span> <span class="kt">ParentAction</span><span class="p">,</span> <span class="kt">ParentEnvironment</span><span class="o">&gt;</span> <span class="o">=</span>
+  <span class="c1">// Run before parent so that it can react to `.dismiss` while state is non-`nil`.</span>
+  <span class="n">childReducer</span>
+    <span class="o">.</span><span class="kd">optional</span>
+    <span class="o">.</span><span class="nf">pullback</span><span class="p">(</span>
+      <span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">child</span><span class="p">,</span>
+      <span class="nv">action</span><span class="p">:</span> <span class="o">/</span><span class="kt">ParentAction</span><span class="o">.</span><span class="n">child</span><span class="p">,</span>
+      <span class="nv">environment</span><span class="p">:</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">child</span> <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="c1">// Combined after child so that it can `nil` out child state upon `.child(.dismiss)`.</span>
+    <span class="o">.</span><span class="nf">combined</span><span class="p">(</span>
+      <span class="nv">with</span><span class="p">:</span> <span class="kt">Reducer</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">environment</span> <span class="k">in</span>
+        <span class="k">switch</span> <span class="n">action</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nf">child</span><span class="p">(</span><span class="o">.</span><span class="n">dismiss</span><span class="p">):</span>
+          <span class="n">state</span><span class="o">.</span><span class="n">child</span> <span class="o">=</span> <span class="kc">nil</span>
+          <span class="k">return</span> <span class="o">.</span><span class="k">none</span>
+        <span class="o">...</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">combined</span><span class="p">(</span><span class="n">with</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">Reducer</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another reducer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A single reducer.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV8pullback5state6action11environmentACyqd__qd_0_qd_1_Gs15WritableKeyPathCyqd__xG_9CasePaths0kJ0Vyqd_0_q_Gq0_qd_1_ctr1_lF"></a>
+                    <a name="//apple_ref/swift/Method/pullback(state:action:environment:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV8pullback5state6action11environmentACyqd__qd_0_qd_1_Gs15WritableKeyPathCyqd__xG_9CasePaths0kJ0Vyqd_0_q_Gq0_qd_1_ctr1_lF">pullback(state:<wbr>action:<wbr>environment:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms a reducer that works on local state, action and environment into one that works on
+global state, action and environment. It accomplishes this by providing 3 transformations to
+the method:</p>
+
+<ul>
+<li>A writable key path that can get/set a piece of local state from the global state.</li>
+<li>A case path that can extract/embed a local action into a global action.</li>
+<li>A function that can transform the global environment into a local environment.</li>
+</ul>
+
+<p>This operation is important for breaking down large reducers into small ones. When used with
+the <code>combine</code> operator you can define many reducers that work on small pieces of domain, and
+then <em>pull them back</em> and <em>combine</em> them into one big reducer that works on a large domain.</p>
+<pre class="highlight swift"><code><span class="c1">// Global domain that holds a local domain:</span>
+<span class="kd">struct</span> <span class="kt">AppState</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt">SettingsState</span><span class="p">,</span> <span class="cm">/* rest of state */</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppAction</span> <span class="p">{</span> <span class="k">case</span> <span class="nf">settings</span><span class="p">(</span><span class="kt">SettingsAction</span><span class="p">),</span> <span class="cm">/* other actions */</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppEnvironment</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt">SettingsEnvironment</span><span class="p">,</span> <span class="cm">/* rest of dependencies */</span> <span class="p">}</span>
+
+<span class="c1">// A reducer that works on the local domain:</span>
+<span class="k">let</span> <span class="nv">settingsReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">SettingsState</span><span class="p">,</span> <span class="kt">SettingsAction</span><span class="p">,</span> <span class="kt">SettingsEnvironment</span><span class="o">&gt;</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c1">// Pullback the settings reducer so that it works on all of the app domain:</span>
+<span class="k">let</span> <span class="nv">appReducer</span><span class="p">:</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="p">,</span> <span class="kt">AppEnvironment</span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">.</span><span class="nf">combine</span><span class="p">(</span>
+  <span class="n">settingsReducer</span><span class="o">.</span><span class="nf">pullback</span><span class="p">(</span>
+    <span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">settings</span><span class="p">,</span>
+    <span class="nv">action</span><span class="p">:</span> <span class="o">/</span><span class="kt">AppAction</span><span class="o">.</span><span class="n">settings</span><span class="p">,</span>
+    <span class="nv">environment</span><span class="p">:</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">settings</span> <span class="p">}</span>
+  <span class="p">),</span>
+
+  <span class="cm">/* other reducers */</span>
+<span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">pullback</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">GlobalEnvironment</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kt">WritableKeyPath</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">State</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="n">action</span> <span class="nv">toLocalAction</span><span class="p">:</span> <span class="kt">CasePath</span><span class="o">&lt;</span><span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">Action</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="n">environment</span> <span class="nv">toLocalEnvironment</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">GlobalEnvironment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Environment</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">GlobalEnvironment</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key path that can get/set <code>State</code> inside <code>GlobalState</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A case path that can extract/embed <code>Action</code> from <code>GlobalAction</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalEnvironment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms <code>GlobalEnvironment</code> into <code>Environment</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reducer that works on <code>GlobalState</code>, <code>GlobalAction</code>, <code>GlobalEnvironment</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV8optionalyACyxSgq_q0_Gs12StaticStringV_SutF"></a>
+                    <a name="//apple_ref/swift/Method/optional(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV8optionalyACyxSgq_q0_Gs12StaticStringV_SutF">optional(_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforms a reducer that works on non-optional state into one that works on optional state by
+only running the non-optional reducer when state is non-nil.</p>
+
+<p>Often used in tandem with <code>pullback</code> to transform a reducer on a non-optional local domain
+into a reducer that can be combined with a reducer on a global domain that contains some
+optional local domain:</p>
+<pre class="highlight swift"><code><span class="c1">// Global domain that holds an optional local domain:</span>
+<span class="kd">struct</span> <span class="kt">AppState</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">modal</span><span class="p">:</span> <span class="kt">ModalState</span><span class="p">?</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppAction</span> <span class="p">{</span> <span class="k">case</span> <span class="nf">modal</span><span class="p">(</span><span class="kt">ModalAction</span><span class="p">)</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppEnvironment</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">mainQueue</span><span class="p">:</span> <span class="kt">AnySchedulerOf</span><span class="o">&lt;</span><span class="kt">DispatchQueue</span><span class="o">&gt;</span> <span class="p">}</span>
+
+<span class="c1">// A reducer that works on the non-optional local domain:</span>
+<span class="k">let</span> <span class="nv">modalReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">ModalState</span><span class="p">,</span> <span class="kt">ModalAction</span><span class="p">,</span> <span class="kt">ModalEnvironment</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c1">// Pullback the local modal reducer so that it works on all of the app domain:</span>
+<span class="k">let</span> <span class="nv">appReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="p">,</span> <span class="kt">AppEnvironment</span><span class="o">&gt;.</span><span class="nf">combine</span><span class="p">(</span>
+  <span class="n">modalReducer</span><span class="o">.</span><span class="nf">optional</span><span class="p">()</span><span class="o">.</span><span class="nf">pullback</span><span class="p">(</span>
+    <span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">modal</span><span class="p">,</span>
+    <span class="nv">action</span><span class="p">:</span> <span class="o">/</span><span class="kt">AppAction</span><span class="o">.</span><span class="n">modal</span><span class="p">,</span>
+    <span class="nv">environment</span><span class="p">:</span> <span class="p">{</span> <span class="kt">ModalEnvironment</span><span class="p">(</span><span class="nv">mainQueue</span><span class="p">:</span> <span class="nv">$0</span><span class="o">.</span><span class="n">mainQueue</span><span class="p">)</span> <span class="p">}</span>
+  <span class="p">),</span>
+  <span class="kt">Reducer</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">environment</span> <span class="k">in</span>
+    <span class="o">...</span>
+  <span class="p">}</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>Take care when combining optional reducers into parent domains, as order matters. Always
+combine optional reducers <em>before</em> parent reducers that can <code>nil</code> out the associated optional
+state.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    See also: <code><a href="../Structs/IfLetStore.html">IfLetStore</a></code>, a SwiftUI helper for transforming a store on optional state into a
+store on non-optional state.
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    See also: <code>Store.ifLet</code>, a UIKit helper for doing imperative work with a store on optional
+state.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">optional</span><span class="p">(</span><span class="n">_</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">StaticString</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span> <span class="n">_</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">UInt</span> <span class="o">=</span> <span class="kd">#line</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span><span class="o">&lt;</span>
+  <span class="kt">State</span><span class="p">?,</span> <span class="kt">Action</span><span class="p">,</span> <span class="kt">Environment</span>
+<span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV7forEach5state6action11environment__ACyqd__qd_0_qd_1_Gs15WritableKeyPathCyqd__SayxGG_9CasePaths0lK0Vyqd_0_Si_q_tGq0_qd_1_cs12StaticStringVSutr1_lF"></a>
+                    <a name="//apple_ref/swift/Method/forEach(state:action:environment:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV7forEach5state6action11environment__ACyqd__qd_0_qd_1_Gs15WritableKeyPathCyqd__SayxGG_9CasePaths0lK0Vyqd_0_Si_q_tGq0_qd_1_cs12StaticStringVSutr1_lF">forEach(state:<wbr>action:<wbr>environment:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A version of <code>pullback</code> that transforms a reducer that works on an element into one that works
+on a collection of elements.</p>
+<pre class="highlight swift"><code><span class="c1">// Global domain that holds a collection of local domains:</span>
+<span class="kd">struct</span> <span class="kt">AppState</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">todos</span><span class="p">:</span> <span class="p">[</span><span class="kt">Todo</span><span class="p">]</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppAction</span> <span class="p">{</span> <span class="k">case</span> <span class="nf">todo</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">TodoAction</span><span class="p">)</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppEnvironment</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">mainQueue</span><span class="p">:</span> <span class="kt">AnySchedulerOf</span><span class="o">&lt;</span><span class="kt">DispatchQueue</span><span class="o">&gt;</span> <span class="p">}</span>
+
+<span class="c1">// A reducer that works on a local domain:</span>
+<span class="k">let</span> <span class="nv">todoReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">Todo</span><span class="p">,</span> <span class="kt">TodoAction</span><span class="p">,</span> <span class="kt">TodoEnvironment</span><span class="o">&gt;</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c1">// Pullback the local todo reducer so that it works on all of the app domain:</span>
+<span class="k">let</span> <span class="nv">appReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="p">,</span> <span class="kt">AppEnvironment</span><span class="o">&gt;.</span><span class="nf">combine</span><span class="p">(</span>
+  <span class="n">todoReducer</span><span class="o">.</span><span class="nf">forEach</span><span class="p">(</span>
+    <span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">todos</span><span class="p">,</span>
+    <span class="nv">action</span><span class="p">:</span> <span class="o">/</span><span class="kt">AppAction</span><span class="o">.</span><span class="nf">todo</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span><span class="nv">action</span><span class="p">:),</span>
+    <span class="nv">environment</span><span class="p">:</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span> <span class="kt">TodoEnvironment</span><span class="p">()</span> <span class="p">}</span>
+  <span class="p">),</span>
+  <span class="kt">Reducer</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">environment</span> <span class="k">in</span>
+    <span class="o">...</span>
+  <span class="p">}</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>Take care when combining <code>forEach</code> reducers into parent domains, as order matters. Always
+combine <code>forEach</code> reducers <em>before</em> parent reducers that can modify the collection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">forEach</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">GlobalEnvironment</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kt">WritableKeyPath</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="p">[</span><span class="kt">State</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="n">action</span> <span class="nv">toLocalAction</span><span class="p">:</span> <span class="kt">CasePath</span><span class="o">&lt;</span><span class="kt">GlobalAction</span><span class="p">,</span> <span class="p">(</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">Action</span><span class="p">)</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="n">environment</span> <span class="nv">toLocalEnvironment</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">GlobalEnvironment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Environment</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">StaticString</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">UInt</span> <span class="o">=</span> <span class="kd">#line</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">GlobalEnvironment</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key path that can get/set an array of <code>State</code> elements inside.
+<code>GlobalState</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A case path that can extract/embed <code>(Int, Action)</code> from <code>GlobalAction</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalEnvironment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms <code>GlobalEnvironment</code> into <code>Environment</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reducer that works on <code>GlobalState</code>, <code>GlobalAction</code>, <code>GlobalEnvironment</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV7forEach5state6action11environment__ACyqd__qd_0_qd_1_Gs15WritableKeyPathCyqd__AA15IdentifiedArrayVyqd_2_xGG_9CasePaths0nK0Vyqd_0_qd_2__q_tGq0_qd_1_cs12StaticStringVSutSHRd_2_r2_lF"></a>
+                    <a name="//apple_ref/swift/Method/forEach(state:action:environment:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV7forEach5state6action11environment__ACyqd__qd_0_qd_1_Gs15WritableKeyPathCyqd__AA15IdentifiedArrayVyqd_2_xGG_9CasePaths0nK0Vyqd_0_qd_2__q_tGq0_qd_1_cs12StaticStringVSutSHRd_2_r2_lF">forEach(state:<wbr>action:<wbr>environment:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A version of <code>pullback</code> that transforms a reducer that works on an element into one that works
+on an identified array of elements.</p>
+<pre class="highlight swift"><code><span class="c1">// Global domain that holds a collection of local domains:</span>
+<span class="kd">struct</span> <span class="kt">AppState</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">todos</span><span class="p">:</span> <span class="kt">IdentifiedArrayOf</span><span class="o">&lt;</span><span class="kt">Todo</span><span class="o">&gt;</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppAction</span> <span class="p">{</span> <span class="k">case</span> <span class="nf">todo</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">Todo</span><span class="o">.</span><span class="kt">ID</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">TodoAction</span><span class="p">)</span> <span class="p">}</span>
+<span class="kd">struct</span> <span class="kt">AppEnvironment</span> <span class="p">{</span> <span class="k">var</span> <span class="nv">mainQueue</span><span class="p">:</span> <span class="kt">AnySchedulerOf</span><span class="o">&lt;</span><span class="kt">DispatchQueue</span><span class="o">&gt;</span> <span class="p">}</span>
+
+<span class="c1">// A reducer that works on a local domain:</span>
+<span class="k">let</span> <span class="nv">todoReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">Todo</span><span class="p">,</span> <span class="kt">TodoAction</span><span class="p">,</span> <span class="kt">TodoEnvironment</span><span class="o">&gt;</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c1">// Pullback the local todo reducer so that it works on all of the app domain:</span>
+<span class="k">let</span> <span class="nv">appReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="p">,</span> <span class="kt">AppEnvironment</span><span class="o">&gt;.</span><span class="nf">combine</span><span class="p">(</span>
+  <span class="n">todoReducer</span><span class="o">.</span><span class="nf">forEach</span><span class="p">(</span>
+    <span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">todos</span><span class="p">,</span>
+    <span class="nv">action</span><span class="p">:</span> <span class="o">/</span><span class="kt">AppAction</span><span class="o">.</span><span class="nf">todo</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span><span class="nv">action</span><span class="p">:),</span>
+    <span class="nv">environment</span><span class="p">:</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span> <span class="kt">TodoEnvironment</span><span class="p">()</span> <span class="p">}</span>
+  <span class="p">),</span>
+  <span class="kt">Reducer</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">environment</span> <span class="k">in</span>
+    <span class="o">...</span>
+  <span class="p">}</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>Take care when combining <code>forEach</code> reducers into parent domains, as order matters. Always
+combine <code>forEach</code> reducers <em>before</em> parent reducers that can modify the collection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">forEach</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">GlobalEnvironment</span><span class="p">,</span> <span class="kt">ID</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kt">WritableKeyPath</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt"><a href="../Structs/IdentifiedArray.html">IdentifiedArray</a></span><span class="o">&lt;</span><span class="kt">ID</span><span class="p">,</span> <span class="kt">State</span><span class="o">&gt;&gt;</span><span class="p">,</span>
+  <span class="n">action</span> <span class="nv">toLocalAction</span><span class="p">:</span> <span class="kt">CasePath</span><span class="o">&lt;</span><span class="kt">GlobalAction</span><span class="p">,</span> <span class="p">(</span><span class="kt">ID</span><span class="p">,</span> <span class="kt">Action</span><span class="p">)</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="n">environment</span> <span class="nv">toLocalEnvironment</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">GlobalEnvironment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Environment</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">StaticString</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">UInt</span> <span class="o">=</span> <span class="kd">#line</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">GlobalEnvironment</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key path that can get/set a collection of <code>State</code> elements inside
+<code>GlobalState</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A case path that can extract/embed <code>(Collection.Index, Action)</code> from
+<code>GlobalAction</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalEnvironment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms <code>GlobalEnvironment</code> into <code>Environment</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reducer that works on <code>GlobalState</code>, <code>GlobalAction</code>, <code>GlobalEnvironment</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV7forEach5state6action11environment__ACyqd__qd_0_qd_1_Gs15WritableKeyPathCyqd__SDyqd_2_xGG_9CasePaths0lK0Vyqd_0_qd_2__q_tGq0_qd_1_cs12StaticStringVSutSHRd_2_r2_lF"></a>
+                    <a name="//apple_ref/swift/Method/forEach(state:action:environment:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV7forEach5state6action11environment__ACyqd__qd_0_qd_1_Gs15WritableKeyPathCyqd__SDyqd_2_xGG_9CasePaths0lK0Vyqd_0_qd_2__q_tGq0_qd_1_cs12StaticStringVSutSHRd_2_r2_lF">forEach(state:<wbr>action:<wbr>environment:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A version of <code>pullback</code> that transforms a reducer that works on an element into one that works
+on a dictionary of element values.</p>
+
+<p>Take care when combining <code>forEach</code> reducers into parent domains, as order matters. Always
+combine <code>forEach</code> reducers <em>before</em> parent reducers that can modify the dictionary.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">forEach</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">GlobalEnvironment</span><span class="p">,</span> <span class="kt">Key</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kt">WritableKeyPath</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">State</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="n">action</span> <span class="nv">toLocalAction</span><span class="p">:</span> <span class="kt">CasePath</span><span class="o">&lt;</span><span class="kt">GlobalAction</span><span class="p">,</span> <span class="p">(</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Action</span><span class="p">)</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="n">environment</span> <span class="nv">toLocalEnvironment</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">GlobalEnvironment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Environment</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">StaticString</span> <span class="o">=</span> <span class="kd">#file</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">line</span><span class="p">:</span> <span class="kt">UInt</span> <span class="o">=</span> <span class="kd">#line</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">GlobalState</span><span class="p">,</span> <span class="kt">GlobalAction</span><span class="p">,</span> <span class="kt">GlobalEnvironment</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key path that can get/set a dictionary of <code>State</code> values inside
+<code>GlobalState</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A case path that can extract/embed <code>(Key, Action)</code> from <code>GlobalAction</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalEnvironment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms <code>GlobalEnvironment</code> into <code>Environment</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reducer that works on <code>GlobalState</code>, <code>GlobalAction</code>, <code>GlobalEnvironment</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV3runyAA6EffectVyq_s5NeverOGxz_q_q0_tF"></a>
+                    <a name="//apple_ref/swift/Method/run(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV3runyAA6EffectVyq_s5NeverOGxz_q_q0_tF">run(_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Runs the reducer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">run</span><span class="p">(</span>
+  <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">State</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Action</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">environment</span><span class="p">:</span> <span class="kt">Environment</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Effect.html">Effect</a></span><span class="o">&lt;</span><span class="kt">Action</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Mutable state.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An action.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>environment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An environment.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An effect that can emit zero or more actions.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV14callAsFunctionyAA6EffectVyq_s5NeverOGxz_q_q0_tF"></a>
+                    <a name="//apple_ref/swift/Method/callAsFunction(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV14callAsFunctionyAA6EffectVyq_s5NeverOGxz_q_q0_tF">callAsFunction(_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">callAsFunction</span><span class="p">(</span>
+  <span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">State</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">Action</span><span class="p">,</span>
+  <span class="n">_</span> <span class="nv">environment</span><span class="p">:</span> <span class="kt">Environment</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Effect.html">Effect</a></span><span class="o">&lt;</span><span class="kt">Action</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV5debug_12actionFormat11environmentACyxq_q0_GSS_AA06ActionF0OAA16DebugEnvironmentVq0_ctF"></a>
+                    <a name="//apple_ref/swift/Method/debug(_:actionFormat:environment:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV5debug_12actionFormat11environmentACyxq_q0_GSS_AA06ActionF0OAA16DebugEnvironmentVq0_ctF">debug(_:<wbr>actionFormat:<wbr>environment:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prints debug messages describing all received actions and state mutations.</p>
+
+<p>Printing is only done in debug (<code>#if DEBUG</code>) builds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">debug</span><span class="p">(</span>
+  <span class="n">_</span> <span class="nv">prefix</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+  <span class="nv">actionFormat</span><span class="p">:</span> <span class="kt"><a href="../Enums/ActionFormat.html">ActionFormat</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">prettyPrint</span><span class="p">,</span>
+  <span class="n">environment</span> <span class="nv">toDebugEnvironment</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Environment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></span> <span class="o">=</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span>
+    <span class="kt"><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></span><span class="p">()</span>
+  <span class="p">}</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prefix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string with which to prefix all debug messages.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toDebugEnvironment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms an environment into a debug environment by
+describing a print function and a queue to print from. Defaults to a function that ignores
+the environment and returns a default <code><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></code> that uses Swift&rsquo;s <code>print</code>
+function and a background queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reducer that prints debug messages for all received actions.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV12debugActions_12actionFormat11environmentACyxq_q0_GSS_AA06ActionG0OAA16DebugEnvironmentVq0_ctF"></a>
+                    <a name="//apple_ref/swift/Method/debugActions(_:actionFormat:environment:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV12debugActions_12actionFormat11environmentACyxq_q0_GSS_AA06ActionG0OAA16DebugEnvironmentVq0_ctF">debugActions(_:<wbr>actionFormat:<wbr>environment:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prints debug messages describing all received actions.</p>
+
+<p>Printing is only done in debug (<code>#if DEBUG</code>) builds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">debugActions</span><span class="p">(</span>
+  <span class="n">_</span> <span class="nv">prefix</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+  <span class="nv">actionFormat</span><span class="p">:</span> <span class="kt"><a href="../Enums/ActionFormat.html">ActionFormat</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">prettyPrint</span><span class="p">,</span>
+  <span class="n">environment</span> <span class="nv">toDebugEnvironment</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Environment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></span> <span class="o">=</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span>
+    <span class="kt"><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></span><span class="p">()</span>
+  <span class="p">}</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prefix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string with which to prefix all debug messages.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toDebugEnvironment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms an environment into a debug environment by
+describing a print function and a queue to print from. Defaults to a function that ignores
+the environment and returns a default <code><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></code> that uses Swift&rsquo;s <code>print</code>
+function and a background queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reducer that prints debug messages for all received actions.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV5debug_5state6action0F6Format11environmentACyxq_q0_GSS_qd__xc9CasePaths0I4PathVyq_qd_0_GAA06ActionG0OAA16DebugEnvironmentVq0_ctr0_lF"></a>
+                    <a name="//apple_ref/swift/Method/debug(_:state:action:actionFormat:environment:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV5debug_5state6action0F6Format11environmentACyxq_q0_GSS_qd__xc9CasePaths0I4PathVyq_qd_0_GAA06ActionG0OAA16DebugEnvironmentVq0_ctr0_lF">debug(_:<wbr>state:<wbr>action:<wbr>actionFormat:<wbr>environment:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prints debug messages describing all received local actions and local state mutations.</p>
+
+<p>Printing is only done in debug (<code>#if DEBUG</code>) builds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">debug</span><span class="o">&lt;</span><span class="kt">LocalState</span><span class="p">,</span> <span class="kt">LocalAction</span><span class="o">&gt;</span><span class="p">(</span>
+  <span class="n">_</span> <span class="nv">prefix</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+  <span class="n">state</span> <span class="nv">toLocalState</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">State</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">LocalState</span><span class="p">,</span>
+  <span class="n">action</span> <span class="nv">toLocalAction</span><span class="p">:</span> <span class="kt">CasePath</span><span class="o">&lt;</span><span class="kt">Action</span><span class="p">,</span> <span class="kt">LocalAction</span><span class="o">&gt;</span><span class="p">,</span>
+  <span class="nv">actionFormat</span><span class="p">:</span> <span class="kt"><a href="../Enums/ActionFormat.html">ActionFormat</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">prettyPrint</span><span class="p">,</span>
+  <span class="n">environment</span> <span class="nv">toDebugEnvironment</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Environment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></span> <span class="o">=</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span>
+    <span class="kt"><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></span><span class="p">()</span>
+  <span class="p">}</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Reducer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prefix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string with which to prefix all debug messages.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that filters state to be printed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toLocalAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A case path that filters actions that are printed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toDebugEnvironment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A function that transforms an environment into a debug environment by
+describing a print function and a queue to print from. Defaults to a function that ignores
+the environment and returns a default <code><a href="../Structs/DebugEnvironment.html">DebugEnvironment</a></code> that uses Swift&rsquo;s <code>print</code>
+function and a background queue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reducer that prints debug messages for all received actions.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV8signpost_3logACyxq_q0_GSS_So06OS_os_E0CtF"></a>
+                    <a name="//apple_ref/swift/Method/signpost(_:log:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV8signpost_3logACyxq_q0_GSS_So06OS_os_E0CtF">signpost(_:<wbr>log:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Instruments the reducer with
+<a href="https://developer.apple.com/documentation/os/logging/recording_performance_data">signposts</a>.
+Each invocation of the reducer will be measured by an interval, and the lifecycle of its
+effects will be measured with interval and event signposts.</p>
+
+<p>To use, build your app for Instruments (⌘I), create a blank instrument, and then use the &ldquo;+&rdquo;
+icon at top right to add the signpost instrument. Start recording your app (red button at top
+left) and then you should see timing information for every action sent to the store and every
+effect executed.</p>
+
+<p>Effect instrumentation can be particularly useful for inspecting the lifecycle of long-living
+effects. For example, if you start an effect (e.g. a location manager) in <code>onAppear</code> and
+forget to tear down the effect in <code>onDisappear</code>, it will clearly show in Instruments that the
+effect never completed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signpost</span><span class="p">(</span>
+  <span class="n">_</span> <span class="nv">prefix</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+  <span class="nv">log</span><span class="p">:</span> <span class="kt">OSLog</span> <span class="o">=</span> <span class="kt">OSLog</span><span class="p">(</span>
+    <span class="nv">subsystem</span><span class="p">:</span> <span class="s">"co.pointfree.composable-architecture"</span><span class="p">,</span>
+    <span class="nv">category</span><span class="p">:</span> <span class="s">"Reducer Instrumentation"</span>
+  <span class="p">)</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prefix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string to print at the beginning of the formatted message for the signpost.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>log</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An <code>OSLog</code> to use for signposts.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A reducer that has been enhanced with instrumentation.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture7ReducerV8optionalACyxSgq_q0_Gvp"></a>
+                    <a name="//apple_ref/swift/Property/optional" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture7ReducerV8optionalACyxSgq_q0_Gvp">optional</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">optional</span><span class="p">:</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">?,</span> <span class="kt">Action</span><span class="p">,</span> <span class="kt">Environment</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-07-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
