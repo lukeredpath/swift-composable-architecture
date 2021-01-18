@@ -116,7 +116,11 @@ struct AppView: View {
           List {
             ForEachStore(
               self.store.scope(state: { $0.filteredTodos }, action: AppAction.todo(id:action:)),
-              content: TodoView.init(store:)
+                content: {
+                    TodoView(store: $0)
+                        .accessibilityElement(children: .contain)
+                        .accessibility(identifier: "todo-item")
+                }
             )
             .onDelete { viewStore.send(.delete($0)) }
             .onMove { viewStore.send(.move($0, $1)) }

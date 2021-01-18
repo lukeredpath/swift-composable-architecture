@@ -36,6 +36,7 @@ struct TodoView: View {
         Button(action: { viewStore.send(.checkBoxToggled) }) {
           Image(systemName: viewStore.isComplete ? "checkmark.square" : "square")
         }
+        .accessibility(identifier: "checkbox")
         .buttonStyle(PlainButtonStyle())
 
         TextField(
