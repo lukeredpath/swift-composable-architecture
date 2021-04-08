@@ -175,6 +175,22 @@ final class EffectTests: XCTestCase {
     self.wait(for: [expectation], timeout: 0)
   }
 
+  func testEffectErrorCrash_WithFlatMapZip() {
+    let expectation = self.expectation(description: "Complete")
+
+    Effect<Int, NSError>(error: NSError(domain: "", code: 1))
+      .flatMap { _ in Effect(value: 123) }
+      .zip(Effect<Int, NSError>(value: 456))
+      .catch { _ in Fail(error: NSError(domain: "", code: 1)) }
+      .sink(
+        receiveCompletion: { _ in expectation.fulfill() },
+        receiveValue: { _ in XCTFail("Effect should fail") }
+      )
+      .store(in: &cancellables)
+
+    self.wait(for: [expectation], timeout: 0)
+  }
+
   #if compiler(>=5.4)
     func testFailing() {
       let effect = Effect<Never, Never>.failing("failing")
