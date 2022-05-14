@@ -38,11 +38,18 @@ struct Root: ReducerProtocol {
     var timers = Timers.State()
     var twoCounters = TwoCounters.State()
     var webSocket = WebSocket.State()
+    
+    var route: Route?
+    
+    enum Route: Equatable {
+      case alertAndConfirmationDialog(AlertAndConfirmationDialog.State = .init())
+      case animation(Animations.State = .init())
+    }
   }
 
   enum Action {
-    case alertAndConfirmationDialog(AlertAndConfirmationDialog.Action)
-    case animation(Animations.Action)
+    case alertAndConfirmationDialog(PresentationAction<AlertAndConfirmationDialog.Action>)
+    case animation(PresentationAction<Animations.Action>)
     case bindingBasics(BindingBasics.Action)
     #if compiler(>=5.4)
       case bindingForm(BindingForm.Action)
@@ -83,20 +90,43 @@ struct Root: ReducerProtocol {
     Reduce { state, action in
       switch action {
       case .onAppear:
-        state = .init()
+//        state = .init()
         return .none
-
+        
+      case .alertAndConfirmationDialog(.present):
+        state.route = .alertAndConfirmationDialog()
+        return .none
+        
+      case .animation(.present):
+        state.route = .animation()
+        return .none
+        
       default:
         return .none
       }
     }
-
-    Pullback(state: \.alertAndConfirmationDialog, action: /Action.alertAndConfirmationDialog) {
+    .navigates(
+      unwrapping: \.route,
+      case: /State.Route.alertAndConfirmationDialog,
+      action: /Action.alertAndConfirmationDialog
+    ) {
       AlertAndConfirmationDialog()
     }
-    Pullback(state: \.animation, action: /Action.animation) {
+    .navigates(
+      unwrapping: \.route,
+      case: /State.Route.animation,
+      action: /Action.animation
+    ) {
       Animations()
     }
+
+//    Pullback(state: \.alertAndConfirmationDialog, action: /Action.alertAndConfirmationDialog) {
+//      AlertAndConfirmationDialog()
+//    }
+//    Pullback(state: \.animation, action: /Action.animation) {
+//      Animations()
+//    }
+    
     Pullback(state: \.bindingBasics, action: /Action.bindingBasics) {
       BindingBasics()
     }

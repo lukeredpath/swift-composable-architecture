@@ -72,15 +72,25 @@ struct RootView: View {
               )
             )
 
-            NavigationLink(
-              "Alerts and Confirmation Dialogs",
-              destination: AlertAndConfirmationDialogView(
-                store: self.store.scope(
-                  state: \.alertAndConfirmationDialog,
-                  action: Root.Action.alertAndConfirmationDialog
-                )
-              )
-            )
+//            NavigationLink(
+//              "Alerts and Confirmation Dialogs",
+//              destination: AlertAndConfirmationDialogView(
+//                store: self.store.scope(
+//                  state: \.alertAndConfirmationDialog,
+//                  action: Root.Action.alertAndConfirmationDialog
+//                )
+//              )
+//            )
+            
+            NavigationLinkStore(
+              store,
+              unwrapping: \.route,
+              case: /Root.State.Route.alertAndConfirmationDialog,
+              action: Root.Action.alertAndConfirmationDialog,
+              destination: AlertAndConfirmationDialogView.init
+            ) {
+              Text("Alerts and Confirmation Dialogs")
+            }
 
             #if compiler(>=5.5)
               NavigationLink(
@@ -94,15 +104,25 @@ struct RootView: View {
               )
             #endif
 
-            NavigationLink(
-              "Animations",
-              destination: AnimationsView(
-                store: self.store.scope(
-                  state: \.animation,
-                  action: Root.Action.animation
-                )
-              )
-            )
+//            NavigationLink(
+//              "Animations",
+//              destination: AnimationsView(
+//                store: self.store.scope(
+//                  state: \.animation,
+//                  action: Root.Action.animation
+//                )
+//              )
+//            )
+            
+            NavigationLinkStore(
+              store,
+              unwrapping: \.route,
+              case: /Root.State.Route.animation,
+              action: Root.Action.animation,
+              destination: AnimationsView.init
+            ) {
+              Text("Animations")
+            }
           }
 
           Section(header: Text("Effects")) {

@@ -33,6 +33,7 @@ struct AlertAndConfirmationDialog: ReducerProtocol {
     case confirmationDialogDismissed
     case decrementButtonTapped
     case incrementButtonTapped
+    case onDismiss
   }
 
   func reduce(into state: inout State, action: Action) -> Effect<Action, Never> {
@@ -74,6 +75,10 @@ struct AlertAndConfirmationDialog: ReducerProtocol {
     case .incrementButtonTapped:
       state.alert = .init(title: .init("Incremented!"))
       state.count += 1
+      return .none
+        
+    case .onDismiss:
+      print("Before dismissing my count was: \(state.count)")
       return .none
     }
   }

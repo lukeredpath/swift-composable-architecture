@@ -102,7 +102,7 @@ extension Effect where Failure == Never {
 }
 
 struct AnimationsView: View {
-  @Environment(\.colorScheme) var colorScheme
+  @Environment(\.colorScheme) private var colorScheme
   let store: StoreOf<Animations>
 
   var body: some View {
