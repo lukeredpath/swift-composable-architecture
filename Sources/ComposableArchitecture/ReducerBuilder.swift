@@ -50,3 +50,5 @@ public enum ReducerBuilder<State, Action> {
     }
   }
 }
+
+typealias ReducerBuilderOf<R: ReducerProtocol> = ReducerBuilder<R.State, R.Action>
