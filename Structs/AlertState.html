@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AlertState Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/AlertState" class="dashAnchor"></a>
+
+    <a title="AlertState Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ComposableArchitecture Docs
+        </a>
+         (78% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ComposableArchitecture Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      AlertState Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Store.html">Store</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestStore.html">TestStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestStore/Step.html">– Step</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ViewStore.html">ViewStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ActionFormat.html">ActionFormat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/CLAuthorizationStatus.html">CLAuthorizationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/OperationQueue.html">OperationQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publishers.html">Publishers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Publishers.html#/Create">– Create</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/RunLoop.html">RunLoop</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SFSpeechRecognizerAuthorizationStatus.html">SFSpeechRecognizerAuthorizationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/View.html">View</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CustomDebugOutputConvertible.html">CustomDebugOutputConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AlertState.html">AlertState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AlertState/Button.html">– Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/DebugEnvironment.html">DebugEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Effect.html">Effect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Effect/Subscriber.html">– Subscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ForEachStore.html">ForEachStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Identified.html">Identified</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/IdentifiedArray.html">IdentifiedArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/IfLetStore.html">IfLetStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/StorePublisher.html">StorePublisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WithViewStore.html">WithViewStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:22ComposableArchitecture17IdentifiedArrayOfa">IdentifiedArrayOf</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>AlertState</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AlertState</span><span class="o">&lt;</span><span class="kt">Action</span><span class="o">&gt;</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AlertState</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="k">where</span> <span class="kt">Action</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AlertState</span><span class="p">:</span> <span class="kt">Hashable</span> <span class="k">where</span> <span class="kt">Action</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AlertState</span><span class="p">:</span> <span class="kt">Identifiable</span> <span class="k">where</span> <span class="kt">Action</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                </div>
+              </div>
+            <p>A data type that describes the state of an alert that can be shown to the user. The <code>Action</code>
+generic is the type of actions that can be sent from tapping on a button in the alert.</p>
+
+<p>This type can be used in your application&rsquo;s state in order to control the presentation or
+dismissal of alerts. It is preferrable to use this API instead of the default SwiftUI API
+for alerts because SwiftUI uses 2-way bindings in order to control the showing and dismissal
+of alerts, and that does not play nicely with the Composable Architecture. The library requires
+that all state mutations happen by sending an action so that a reducer can handle that logic,
+which greatly simplifies how data flows through your application, and gives you instant
+testability on all parts of your application.</p>
+
+<p>To use this API, you model all the alert actions in your domain&rsquo;s action enum:</p>
+<pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">AppAction</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="n">cancelTapped</span>
+  <span class="k">case</span> <span class="n">confirmTapped</span>
+  <span class="k">case</span> <span class="n">deleteTapped</span>
+
+  <span class="c1">// Your other actions</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>And you model the state for showing the alert in your domain&rsquo;s state, and it can start off
+<code>nil</code>:</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">AppState</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="p">{</span>
+  <span class="k">var</span> <span class="nv">alert</span> <span class="o">=</span> <span class="kt">AlertState</span><span class="o">&lt;</span><span class="kt">AppAction</span><span class="o">&gt;</span><span class="p">?</span>
+
+  <span class="c1">// Your other state</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Then, in the reducer you can construct an <code>AlertState</code> value to represent the alert you want
+to show to the user:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">appReducer</span> <span class="o">=</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="p">,</span> <span class="kt">AppEnvironment</span><span class="o">&gt;</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">env</span> <span class="k">in</span>
+  <span class="k">switch</span> <span class="n">action</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nv">cancelTapped</span><span class="p">:</span>
+      <span class="n">state</span><span class="o">.</span><span class="n">alert</span> <span class="o">=</span> <span class="kc">nil</span>
+      <span class="k">return</span> <span class="o">.</span><span class="k">none</span>
+
+    <span class="k">case</span> <span class="o">.</span><span class="nv">confirmTapped</span><span class="p">:</span>
+      <span class="n">state</span><span class="o">.</span><span class="n">alert</span> <span class="o">=</span> <span class="kc">nil</span>
+      <span class="c1">// Do deletion logic...</span>
+
+    <span class="k">case</span> <span class="o">.</span><span class="nv">deleteTapped</span><span class="p">:</span>
+      <span class="n">state</span><span class="o">.</span><span class="n">alert</span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span>
+        <span class="nv">title</span><span class="p">:</span> <span class="s">"Delete"</span><span class="p">,</span>
+        <span class="nv">message</span><span class="p">:</span> <span class="s">"Are you sure you want to delete this? It cannot be undone."</span><span class="p">,</span>
+        <span class="nv">primaryButton</span><span class="p">:</span> <span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="s">"Confirm"</span><span class="p">,</span> <span class="nv">send</span><span class="p">:</span> <span class="o">.</span><span class="n">confirmTapped</span><span class="p">),</span>
+        <span class="nv">secondaryButton</span><span class="p">:</span> <span class="o">.</span><span class="nf">cancel</span><span class="p">()</span>
+      <span class="p">)</span>
+    <span class="k">return</span> <span class="o">.</span><span class="k">none</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>And then, in your view you can use the <code>.alert(_:send:dismiss:)</code> method on <code>View</code> in order
+to present the alert in a way that works best with the Composable Architecture:</p>
+<pre class="highlight swift"><code><span class="kt">Button</span><span class="p">(</span><span class="s">"Delete"</span><span class="p">)</span> <span class="p">{</span> <span class="n">viewStore</span><span class="o">.</span><span class="nf">send</span><span class="p">(</span><span class="o">.</span><span class="n">deleteTapped</span><span class="p">)</span> <span class="p">}</span>
+  <span class="o">.</span><span class="nf">alert</span><span class="p">(</span>
+    <span class="k">self</span><span class="o">.</span><span class="n">store</span><span class="o">.</span><span class="nf">scope</span><span class="p">(</span><span class="nv">state</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="n">alert</span><span class="p">),</span>
+    <span class="nv">dismiss</span><span class="p">:</span> <span class="o">.</span><span class="n">cancelTapped</span>
+  <span class="p">)</span>
+</code></pre>
+
+<p>This makes your reducer in complete control of when the alert is shown or dismissed, and makes
+it so that any choice made in the alert is automatically fed back into the reducer so that you
+can handle its logic.</p>
+
+<p>Even better, you can instantly write tests that your alert behavior works as expected:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">store</span> <span class="o">=</span> <span class="kt">TestStore</span><span class="p">(</span>
+  <span class="nv">initialState</span><span class="p">:</span> <span class="kt">AppState</span><span class="p">(),</span>
+  <span class="nv">reducer</span><span class="p">:</span> <span class="n">appReducer</span><span class="p">,</span>
+  <span class="nv">environment</span><span class="p">:</span> <span class="o">.</span><span class="n">mock</span>
+<span class="p">)</span>
+
+<span class="n">store</span><span class="o">.</span><span class="nf">assert</span><span class="p">(</span>
+  <span class="o">.</span><span class="nf">send</span><span class="p">(</span><span class="o">.</span><span class="n">deleteTapped</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$0</span><span class="o">.</span><span class="n">alert</span> <span class="o">=</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span>
+      <span class="nv">title</span><span class="p">:</span> <span class="s">"Delete"</span><span class="p">,</span>
+      <span class="nv">message</span><span class="p">:</span> <span class="s">"Are you sure you want to delete this? It cannot be undone."</span><span class="p">,</span>
+      <span class="nv">primaryButton</span><span class="p">:</span> <span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="s">"Confirm"</span><span class="p">,</span> <span class="nv">send</span><span class="p">:</span> <span class="o">.</span><span class="n">confirmTapped</span><span class="p">),</span>
+      <span class="nv">secondaryButton</span><span class="p">:</span> <span class="o">.</span><span class="nf">cancel</span><span class="p">(</span><span class="nv">send</span><span class="p">:</span> <span class="o">.</span><span class="n">cancelTapped</span><span class="p">)</span>
+    <span class="p">)</span>
+  <span class="p">},</span>
+  <span class="o">.</span><span class="nf">send</span><span class="p">(</span><span class="o">.</span><span class="n">deleteTapped</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$0</span><span class="o">.</span><span class="n">alert</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="c1">// Also verify that delete logic executed correctly</span>
+  <span class="p">}</span>
+<span class="p">)</span>
+</code></pre>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture10AlertStateV7messageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/message" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture10AlertStateV7messageSSSgvp">message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture10AlertStateV13primaryButtonAC0F0Vyx_GSgvp"></a>
+                    <a name="//apple_ref/swift/Property/primaryButton" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture10AlertStateV13primaryButtonAC0F0Vyx_GSgvp">primaryButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">primaryButton</span><span class="p">:</span> <span class="kt"><a href="../Structs/AlertState/Button.html">Button</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture10AlertStateV15secondaryButtonAC0F0Vyx_GSgvp"></a>
+                    <a name="//apple_ref/swift/Property/secondaryButton" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture10AlertStateV15secondaryButtonAC0F0Vyx_GSgvp">secondaryButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">secondaryButton</span><span class="p">:</span> <span class="kt"><a href="../Structs/AlertState/Button.html">Button</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture10AlertStateV5titleSSvp"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture10AlertStateV5titleSSvp">title</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture10AlertStateV5title7message13dismissButtonACyxGSS_SSSgAC0H0Vyx_GSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(title:message:dismissButton:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture10AlertStateV5title7message13dismissButtonACyxGSS_SSSgAC0H0Vyx_GSgtcfc">init(title:<wbr>message:<wbr>dismissButton:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+  <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+  <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+  <span class="nv">dismissButton</span><span class="p">:</span> <span class="kt"><a href="../Structs/AlertState/Button.html">Button</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture10AlertStateV5title7message13primaryButton09secondaryH0ACyxGSS_SSSgAC0H0Vyx_GALtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(title:message:primaryButton:secondaryButton:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture10AlertStateV5title7message13primaryButton09secondaryH0ACyxGSS_SSSgAC0H0Vyx_GALtcfc">init(title:<wbr>message:<wbr>primaryButton:<wbr>secondaryButton:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+  <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+  <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+  <span class="nv">primaryButton</span><span class="p">:</span> <span class="kt"><a href="../Structs/AlertState/Button.html">Button</a></span><span class="p">,</span>
+  <span class="nv">secondaryButton</span><span class="p">:</span> <span class="kt"><a href="../Structs/AlertState/Button.html">Button</a></span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ComposableArchitecture10AlertStateV6ButtonV"></a>
+                    <a name="//apple_ref/swift/Struct/Button" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ComposableArchitecture10AlertStateV6ButtonV">Button</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/AlertState/Button.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Button</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/AlertState.html">AlertState</a></span><span class="o">.</span><span class="kt">Button</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="k">where</span> <span class="kt">Action</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/AlertState.html">AlertState</a></span><span class="o">.</span><span class="kt">Button</span><span class="p">:</span> <span class="kt">Hashable</span> <span class="k">where</span> <span class="kt">Action</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Action%60%3A%20%60Hashable%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Action`: `Hashable`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Action%60%3A%20%60Hashable%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Action</code>: <code>Hashable</code></p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s12IdentifiableP2id2IDQzvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s12IdentifiableP2id2IDQzvp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-07-10)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

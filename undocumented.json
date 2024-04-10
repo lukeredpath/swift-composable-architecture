@@ -1,0 +1,334 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Debugging/ReducerDebugging.swift",
+      "line": 140,
+      "symbol": "DebugEnvironment.printer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Debugging/ReducerDebugging.swift",
+      "line": 141,
+      "symbol": "DebugEnvironment.queue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Debugging/ReducerDebugging.swift",
+      "line": 143,
+      "symbol": "DebugEnvironment.init(printer:queue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Debugging/ReducerDebugging.swift",
+      "line": 151,
+      "symbol": "DebugEnvironment.init(printer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Effect.swift",
+      "line": 16,
+      "symbol": "Effect.upstream",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Create.swift",
+      "line": 171,
+      "symbol": "Effect.Subscriber",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Create.swift",
+      "line": 183,
+      "symbol": "Effect.Subscriber.send(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Create.swift",
+      "line": 187,
+      "symbol": "Effect.Subscriber.send(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 159,
+      "symbol": "CustomDebugOutputConvertible",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 160,
+      "symbol": "CustomDebugOutputConvertible.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 164,
+      "symbol": "Date.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 176,
+      "symbol": "DispatchQueue.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 189,
+      "symbol": "Effect.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 268,
+      "symbol": "OperationQueue.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 277,
+      "symbol": "RunLoop.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 286,
+      "symbol": "URL.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 295,
+      "symbol": "CLAuthorizationStatus.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Debug.swift",
+      "line": 317,
+      "symbol": "SFSpeechRecognizerAuthorizationStatus.debugOutput",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Internal/Deprecations.swift",
+      "line": 7,
+      "symbol": "Reducer.optional",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Reducer.swift",
+      "line": 561,
+      "symbol": "Reducer.callAsFunction(_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/Store.swift",
+      "line": 220,
+      "symbol": "StorePublisher.upstream",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 94,
+      "symbol": "AlertState.message",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 95,
+      "symbol": "AlertState.primaryButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 96,
+      "symbol": "AlertState.secondaryButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 97,
+      "symbol": "AlertState.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 99,
+      "symbol": "AlertState.init(title:message:dismissButton:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 109,
+      "symbol": "AlertState.init(title:message:primaryButton:secondaryButton:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 121,
+      "symbol": "AlertState.Button",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 122,
+      "symbol": "AlertState.Button.action",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 123,
+      "symbol": "AlertState.Button.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 125,
+      "symbol": "AlertState.Button.cancel(_:send:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 132,
+      "symbol": "AlertState.Button.cancel(send:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 138,
+      "symbol": "AlertState.Button.default(_:send:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 145,
+      "symbol": "AlertState.Button.destructive(_:send:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 152,
+      "symbol": "AlertState.Button.Type",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 153,
+      "symbol": "AlertState.Button.Type.cancel(label:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 154,
+      "symbol": "AlertState.Button.Type.default(label:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 155,
+      "symbol": "AlertState.Button.Type.destructive(label:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 188,
+      "symbol": "AlertState.Button",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Alert.swift",
+      "line": 189,
+      "symbol": "AlertState.Button",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Identified.swift",
+      "line": 5,
+      "symbol": "Identified.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/Identified.swift",
+      "line": 42,
+      "symbol": "Identified.subscript(dynamicMember:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/IdentifiedArray.swift",
+      "line": 178,
+      "symbol": "IdentifiedArray.remove(atOffsets:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/IdentifiedArray.swift",
+      "line": 184,
+      "symbol": "IdentifiedArray.move(fromOffsets:toOffset:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/IdentifiedArray.swift",
+      "line": 188,
+      "symbol": "IdentifiedArray.sort(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/SwiftUI/IdentifiedArray.swift",
+      "line": 230,
+      "symbol": "IdentifiedArray.sort()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/luke/Code/lukeredpath/swift-composable-architecture/Sources/ComposableArchitecture/ViewStore.swift",
+      "line": 220,
+      "symbol": "ViewStore.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/luke/Code/lukeredpath/swift-composable-architecture"
+}
