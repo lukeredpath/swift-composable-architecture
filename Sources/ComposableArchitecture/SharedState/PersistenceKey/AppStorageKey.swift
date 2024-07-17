@@ -293,7 +293,7 @@ extension AppStorageKey: PersistenceKey {
     let userDefaultsDidChange = NotificationCenter.default.addObserver(
       forName: UserDefaults.didChangeNotification,
       object: self.store,
-      queue: nil
+      queue: .main
     ) { _ in
       let newValue = load(initialValue: initialValue)
       defer { previousValue.withValue { $0 = newValue } }
@@ -312,7 +312,7 @@ extension AppStorageKey: PersistenceKey {
       willEnterForeground = NotificationCenter.default.addObserver(
         forName: willEnterForegroundNotificationName,
         object: nil,
-        queue: nil
+        queue: .main
       ) { _ in
         didSet(load(initialValue: initialValue))
       }
