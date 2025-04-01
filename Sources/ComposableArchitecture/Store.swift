@@ -369,11 +369,9 @@ public final class Store<State, Action> {
     _ action: Action,
     originatingFrom originatingAction: Action?
   ) -> Task<Void, Never>? {
-    #if DEBUG
-      if BindingLocal.isActive && self._isInvalidated() {
-        return .none
-      }
-    #endif
+    if BindingLocal.isActive && self._isInvalidated() {
+      return .none
+    }
     return self.rootStore.send(self.fromAction(action))
   }
 
