@@ -82,18 +82,14 @@ extension Effect {
           .eraseToAnyPublisher()
         )
       )
-    case let .run(priority, operation):
-      return withEscapedDependencies { continuation in
-        return Self(
-          operation: .run(priority) { send in
-            await continuation.yield {
-              await withTaskCancellation(id: id, cancelInFlight: cancelInFlight) {
-                await operation(send)
-              }
-            }
-          }
-        )
-      }
+    case .run:
+      // Merging the run effect with a publisher allows us to defer cancellation
+      // to the publisher implementation above, ensuring cancellation is set up
+      // synchronously, not asynchronously.
+      return .merge(
+        .publisher { Empty(completeImmediately: true) },
+        self
+      ).cancellable(id: id, cancelInFlight: cancelInFlight)
     }
   }
 
